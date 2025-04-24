@@ -1,0 +1,11 @@
+[Unit]
+Description="Monitors audio outputs and enabled easyeffects"
+
+[Service]
+ExecStartPre=/bin/sleep 10
+ExecStart=/home/tom/.output-monitor.sh
+Restart=on-failure
+Nice=15
+
+[Install]
+WantedBy=default.target
