@@ -15,6 +15,7 @@ Whilst there are otherwise to acomplish something similar, nothing really works 
 4. Download `output-monitor.service` into the `/etc/systemd/user` directory
 5. Start it and enable it:
 ```
+systemctl --user daemon-reload
 sudo systemctl --user start output-monitor
 sudo systemctl --user enable output-monitor
 ```
